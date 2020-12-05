@@ -18,7 +18,7 @@ export const HeaderWrapper = styled.header`
 
   a {
     display: flex;
-    width: 200px;
+    width: 300px;
     height: 80%;
     font-size: 1.5rem;
     text-align: center;

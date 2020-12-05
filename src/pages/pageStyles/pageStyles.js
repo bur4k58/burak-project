@@ -193,7 +193,7 @@ export const Film = styled(Link)`
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    height: 80px;
+    height: 100px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -210,7 +210,7 @@ export const Film = styled(Link)`
     }
 
     p:nth-child(2) {
-      color: ${COLORS.SECONDARY};
+      color: white;
 
       margin-top: 0.3rem;
     }

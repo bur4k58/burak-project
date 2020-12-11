@@ -12,7 +12,7 @@ import {
 } from "../pages/pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
-const IndexPage = () => {
+const HomePage = () => {
   const {
     wpcontent: {
       page: {
@@ -82,11 +82,11 @@ const IndexPage = () => {
           <div className="inner-div">
             <p className="header-title">{homePageHeaderTitle}</p>
           </div>
-          <BottomEdgeDown color={COLORS.BLACK} />
+          <BottomEdgeDown color= "grey" />
         </div>
         <div className="description">
           <p>{homePageDescription}</p>
-          <BottomEdgeUp color={COLORS.PRIMARY} />
+          <BottomEdgeUp color= "grey" />
         </div>
         <div className="films">
           <h2>Featured Films</h2>
@@ -112,4 +112,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default HomePage

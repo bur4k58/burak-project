@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
       transform: translate(-50%, -50%);
       width: 60%;
       padding: 1rem;
-      background-color: ${COLORS.PRIMARY + "d0"};
+      background-color: "grey";
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         top: 120px;
@@ -133,7 +133,7 @@ export const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ filmsColor = COLORS.PRIMARY }) =>
+    background-color: ${({ filmsColor = "black" }) =>
       `${filmsColor}`};
 
     h2 {

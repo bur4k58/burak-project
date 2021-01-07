@@ -72,7 +72,7 @@ export const pageQuery = graphql`
             sourceUrl
             imageFile {
               childImageSharp {
-                fluid(quality: 75) {
+                fluid(quality: 50) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

@@ -9,7 +9,7 @@ import {
   BottomEdgeDown,
   BottomEdgeUp,
   Film,
-} from "../pages/pageStyles/pageStyles"
+} from "../pageStyles/pageStyles"
 
 const HomePage = () => {
   const {

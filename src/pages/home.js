@@ -10,7 +10,6 @@ import {
   BottomEdgeUp,
   Film,
 } from "../pages/pageStyles/pageStyles"
-import { COLORS } from "../constants"
 
 const HomePage = () => {
   const {

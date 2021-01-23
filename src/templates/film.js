@@ -24,6 +24,11 @@ const FilmTemplate = ({data: {
               fluid={FilmMeta.picture.imageFile.childImageSharp.fluid}
               alt={FilmMeta.picture.altText}
             />
+            <div className="genres">
+                {genres.map(({node: genre}) => (
+                    <div key={genre.name} className="genre">{genre.name}</div>
+                ))}
+            </div>
           </div>
           <div className="film-info">
             <h2>

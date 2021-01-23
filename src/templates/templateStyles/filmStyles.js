@@ -89,6 +89,28 @@ export const Wrapper = styled.div`
         text-transform: uppercase;
       }
     }
+    .genres {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      color: ${COLORS.WHITE};
+      font-family: ${FONT_FAMILIES.TITLE};
+      text-transform: uppercase;
+      background-color: ${COLORS.GREY};
+      border-right: solid 15px ${COLORS.WHITE};
+
+      @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
+        color: ${COLORS.PRIMARY};
+        border-right: solid 5px ${COLORS.PRIMARY};
+      }
+
+      .genre {
+        padding: 1rem 1.5rem;
+      }
   }
 
   .film-pictures {

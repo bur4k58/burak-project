@@ -51,7 +51,7 @@ const FilmsPage = () => {
                                     sourceUrl
                                     imageFile {
                                         childImageSharp {
-                                        fluid(quality: 75, grayscale: true) {
+                                        fluid(quality: 50, grayscale: true) {
                                             ...GatsbyImageSharpFluid_withWebp
                                         }
                                     }

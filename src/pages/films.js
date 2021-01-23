@@ -7,7 +7,6 @@ import {
   Wrapper,
   Image,
   BottomEdgeDown,
-  BottomEdgeUp,
   Film,
 } from "../pageStyles/pageStyles"
 import { COLORS } from "../constants"
@@ -75,14 +74,13 @@ const FilmsPage = () => {
               fluid={filmsPageHeaderPicture.imageFile.childImageSharp.fluid}
               alt={filmsPageHeaderPicture.altText}
             />
-            <BottomEdgeDown color= "grey" />
+            <BottomEdgeDown color={COLORS.BLACK}/>
           </div>
           <div className="description">
             <h2>Ocbe Films</h2>
             <p>{filmsPageDescription}</p>
-            <BottomEdgeUp color={COLORS.BLACK} />
           </div>
-          <div className="films">
+          <div className="films" color="black">
             <h2>Our Films</h2>
             <div className="film-items">
               {films.map(({ node: { FilmMeta, slug } }) => (

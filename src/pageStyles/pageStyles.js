@@ -21,9 +21,9 @@ export const Wrapper = styled.div`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 60%;
+      width: 100%;
       padding: 1rem;
-      background-color: "grey";
+      background-color: "black";
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         top: 120px;
@@ -133,7 +133,7 @@ export const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ filmsColor = "black" }) =>
+    background-color: ${({ filmsColor = COLORS.BLACK }) =>
       `${filmsColor}`};
 
     h2 {

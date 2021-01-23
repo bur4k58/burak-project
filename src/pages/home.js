@@ -7,9 +7,9 @@ import {
   Wrapper,
   Image,
   BottomEdgeDown,
-  BottomEdgeUp,
   Film,
 } from "../pageStyles/pageStyles"
+import { COLORS } from "../constants"
 
 const HomePage = () => {
   const {
@@ -43,7 +43,7 @@ const HomePage = () => {
             }
             homePageFeaturedFilms {
               ... on WPGraphql_Film {
-                id
+                slug
                 FilmMeta {
                   description
                   director
@@ -70,7 +70,7 @@ const HomePage = () => {
   `)
 
   return (
-    <Layout>
+<Layout>
       <SEO title="Home" />
       <Wrapper>
         <div className="banner">
@@ -81,17 +81,16 @@ const HomePage = () => {
           <div className="inner-div">
             <p className="header-title">{homePageHeaderTitle}</p>
           </div>
-          <BottomEdgeDown color= "grey" />
+          <BottomEdgeDown color={COLORS.BLACK}/>
         </div>
         <div className="description">
           <p>{homePageDescription}</p>
-          <BottomEdgeUp color= "grey" />
         </div>
         <div className="films">
           <h2>Featured Films</h2>
           <div className="film-items">
             {homePageFeaturedFilms.map(({ FilmMeta, slug }) => (
-                <Film key={slug} to={`/${slug}`}>
+                <Film to={`/${slug}`} key={slug}>
                 <Image
                   fluid={FilmMeta.picture.imageFile.childImageSharp.fluid}
                   alt={FilmMeta.picture.altText}
@@ -100,7 +99,7 @@ const HomePage = () => {
                   <p>
                     {FilmMeta.name}
                   </p>
-                  <p>{FilmMeta.description}</p>
+                  <p>Director: {FilmMeta.director}</p>
                 </div>
               </Film>
             ))}
